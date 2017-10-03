@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Card = ({ location, yearAndData }) => {
   let yearAndDataKeys = Object.keys(yearAndData);
