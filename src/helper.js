@@ -41,12 +41,25 @@ export default class DistrictRepository {
 };
 
   findByName(string) {
-    //calling find on this.data and comparing the location property of each object to the string converted to upppercase and returning the one that matches. 
+    //calling find on this.data and comparing the location property of each object to the string converted to upppercase and returning the one that matches.
     if(string) {
       const foundObject = this.data.find((obj) => {
         return obj.location === string.toUpperCase();
       })
       return foundObject;
+    }
+  }
+
+  findAllMatches(string) {
+    // if we don't get an arg, we return this.data. if we do, we filter this.data for any obj with location that includes the string converted to upppercase
+    // no matches? empty array returned
+    if (string) {
+      let matchesArray = this.data.filter((obj) => {
+        return obj.location.includes(string.toUpperCase())
+      })
+      return matchesArray;
+    } else {
+      return this.data;
     }
   }
 }
