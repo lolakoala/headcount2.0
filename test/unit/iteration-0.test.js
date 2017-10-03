@@ -5,11 +5,11 @@ describe('DistrictRepository iteration 0', () =>  {
   const district = new DistrictRepository(kinderData);
 
   test('district has data in an object', () => {
-    expect(typeof district.data).toBe('object');
+    expect(typeof district.cleanData).toBe('object');
   });
 
   test('data coming in has no duplicates', () => {
-    expect(Object.keys(district.data).length).toBe(181);
+    expect(Object.keys(district.cleanData).length).toBe(181);
   });
 
 });
