@@ -24,6 +24,7 @@ class App extends Component {
                 setAppState={this.setState}/>
         <CardContainer info={this.state.info.cleanData}
                        matches={this.state.matches}/>
+
       </div>
     );
   }

@@ -1,1 +1,20 @@
 /*APP COMPONENT RELATED CSS GOES HERE*/
+* {
+  background-color: #ACD0DD;
+  font-family: monospace;
+}
+
+.header {
+  font-size: 54px;
+  text-align: center;
+}
+
+.secondHeader {
+  font-size: 26px;
+  text-align: center;
+}
+
+.instructions {
+  font-size: 18px;
+  text-align: center;
+}
