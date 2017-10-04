@@ -20,7 +20,7 @@
     // skeleton into locationObjectArray for each location
      locationArray.forEach((district) => {
        locationObjectArray.push({
-         'location': district.toUpperCase(), 'data': { } });
+         'location': district.toUpperCase(), 'data': { }, class: 'district-obj' });
      });
     // finally, use locationObjectArray which now has object skeletons
     // as an accumulator
