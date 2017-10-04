@@ -17,15 +17,21 @@ class Search extends Component {
       <input className="search" placeholder='Search by District'
         type='text'
         onChange={(event) => { this.searchCards(event); }}
-        value={this.state.searchInput} />
+        defaultValue={this.state.searchInput} />
       </div>
     );
   }
 
+  // setAndSearch(event) {
+  //   this.setState({ searchInput: event.target.value });
+  //   console.log(this.state.searchInput);
+  //   this.searchCards();
+  //
+  // }
+
   searchCards(event) {
-    this.setState({ searchInput: event.target.value });
-    console.log(this.state.searchInput);
-    let matches = this.props.info.findAllMatches(this.state.searchInput);
+    let matches = this.props.info.findAllMatches(event.target.value);
+    console.log(matches);
     matches.forEach(dataObj => {
       dataObj.class = 'match';
     });
