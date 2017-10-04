@@ -1,0 +1,9 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 25%;
+  background-color: #BABEA8;
+}

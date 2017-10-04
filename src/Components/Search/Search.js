@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Search.css'
 import DistrictRepository from '../../helper.js';
 import kinderData from '../../../data/kindergartners_in_full_day_program.js';
 
@@ -12,10 +13,12 @@ class Search extends Component {
 
   render() {
     return (
-      <input placeholder='Search by District'
+      <div className="searchContainer">
+      <input className="search" placeholder='Search by District'
         type='text'
         onChange={(event) => { this.searchCards(event); }}
         value={this.state.searchInput} />
+      </div>
     );
   }
 
