@@ -14,9 +14,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>HeadCount</h1>
-        <h2>Percentage of Kindergartners Enrolled in School</h2>
-        <p>Some instructions here</p>
+        <h1 className="header">HeadCount</h1>
+        <h2 className="secondHeader">Percentage of Kindergartners Enrolled in School</h2>
+        <p className="instructions">Click on a few districts to compare them!</p>
         <CardContainer info={this.state.info.cleanData}/>
       </div>
     );
