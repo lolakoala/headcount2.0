@@ -1,9 +1,14 @@
 .searchContainer {
+  background-image: url("https://dncache-mauganscorp.netdna-ssl.com/thumbseg/361/361386-bigthumbnail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
+  height: 300px;
 }
 
 .search {
+  height: 25px;
   width: 25%;
   background-color: #BABEA8;
 }
