@@ -16,7 +16,7 @@ class App extends Component {
       <div>
         <h1 className="header">HeadCount</h1>
         <h2 className="secondHeader">Percentage of Kindergartners Enrolled in School</h2>
-        <p className="instructions">Click on a few districts to compare them!</p>
+        <p className="instructions">Click on a two districts to compare them!</p>
         <CardContainer info={this.state.info.cleanData}/>
       </div>
     );
