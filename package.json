@@ -4,11 +4,11 @@
   "private": true,
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^6.2.4",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "babel-jest": "^20.0.3",
-    "babel-loader": "^6.2.4",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "enzyme": "^2.8.2",
@@ -23,10 +23,10 @@
     "mock-local-storage": "^1.0.5",
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.4.2",
+    "react-scripts": "0.9.0",
     "react-test-renderer": "^15.5.4",
     "sass-loader": "^3.2.0",
-    "style-loader": "^0.13.1",
-    "react-scripts": "0.9.0"
+    "style-loader": "^0.13.1"
   },
   "dependencies": {
     "node-sass-chokidar": "0.0.3",
