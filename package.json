@@ -7,10 +7,25 @@
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^6.2.4",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.10.3",
+    "jest": "^20.0.4",
+    "jest-css-modules": "^1.1.0",
+    "mocha": "^2.4.5",
+    "mocha-loader": "^0.7.1",
+    "mock-local-storage": "^1.0.5",
+    "node-libs-browser": "^1.0.0",
+    "node-sass": "^3.4.2",
+    "react-test-renderer": "^15.5.4",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
     "react-scripts": "0.9.0"
   },
   "dependencies": {
@@ -19,6 +34,12 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mock__/fileMock.js",
+      "\\.(css|scss|less)$": "<rootDir>/__mock__/styleMock.js"
+    }
+  },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
@@ -26,9 +47,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "./node_modules/.bin/eslint ./"
-  },
-  "extends": [
-    "react-app"
-  ]
+    "lint": "./node_modules/.bin/eslint ./",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+  }
 }
