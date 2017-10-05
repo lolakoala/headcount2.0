@@ -7,7 +7,9 @@ const Search = ({ setAppState }) => {
     <div className="searchContainer">
     <input className="search" placeholder='Search by District'
       type='text'
-      onChange={(event) => { setAppState({ string: event.target.value }); }} />
+      onChange={(event) => { setAppState({ string: event.target.value }); }}
+      // value={event.target.value}
+    />
     </div>
   );
 };
