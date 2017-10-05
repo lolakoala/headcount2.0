@@ -1,9 +1,7 @@
 
-
 * {
   font-family: monospace;
   /*background-color: #ACD0DD;*/
-
 }
 
 
@@ -18,7 +16,6 @@
   font-size: 150px;
   margin: auto 0 auto 0;
   background-color: #ACD0DD;
-
 }
 
 .secondHeader {
@@ -28,7 +25,6 @@
   background-color: #A2BBC2;
   margin: auto 0 auto 0;
   padding-top: 20px;
-
 }
 
 .instructions {
@@ -38,6 +34,4 @@
   background-color: #A2BBC2;
   margin: auto 0 auto 0;
   padding: 20px 0 20px 0;
-
-
 }

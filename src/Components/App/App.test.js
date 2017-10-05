@@ -5,6 +5,7 @@ import { shallow, mount } from 'enzyme';
 
 describe('App', () => {
   let wrapper = shallow(<App />);
+  let mountedWrapper = mount(<App />);
 
   it('renders without crashing', () => {
     const div = document.createElement('div');
@@ -12,10 +13,8 @@ describe('App', () => {
   });
 
   it('should have info in state', () => {
-    let wrapper = mount(<App />);
 
-    expect(wrapper.node.state.info).toBeDefined();
-
+    expect(mountedWrapper.node.state.info).toBeDefined();
   });
 
   it('should have a title', () => {
@@ -46,6 +45,23 @@ describe('App', () => {
   it('should match the snapshot', () => {
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should change state when search input changes', () => {
+    let input = mountedWrapper.find('input');
+
+    input.simulate('change', {target: {value: 'colorado'} });
+    expect(mountedWrapper.node.state.string).toEqual('colorado');
+  });
+
+  it('should display number of cards according to seach results', () => {
+    let input = mountedWrapper.find('input');
+
+    input.simulate('change', {target: {value: 'ad'} });
+    expect(mountedWrapper.node.state.string).toEqual('ad');
+
+    let currentCards = mountedWrapper.find('Card');
+    expect(currentCards.length).toEqual(8);
   });
 
 });
