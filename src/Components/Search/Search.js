@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Search.css';
 import PropTypes from 'prop-types';
 
@@ -13,7 +13,7 @@ const Search = ({ setAppState }) => {
 };
 
 Search.propTypes = {
-
+  setAppState: React.PropTypes.func.isRequired
 };
 
 export default Search;

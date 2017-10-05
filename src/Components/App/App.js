@@ -18,7 +18,9 @@ class App extends Component {
     return (
       <div>
         <h1 className="header">HeadCount</h1>
-        <h2 className="secondHeader">Percentage of Kindergartners Enrolled in School</h2>
+        <h2 className="secondHeader">
+          Percentage of Kindergartners Enrolled in School
+        </h2>
         <p className="instructions">Some instructions here</p>
         <Search setAppState={this.setState}/>
         <CardContainer info={this.state.info}

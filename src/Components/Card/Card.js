@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css'
+import './Card.css';
 import PropTypes from 'prop-types';
 
 const Card = ({ location, yearAndData, className }) => {
@@ -23,5 +23,10 @@ const Card = ({ location, yearAndData, className }) => {
   );
 };
 
+Card.propTypes = {
+  location: React.PropTypes.string.isRequired,
+  yearAndData: React.PropTypes.object.isRequired,
+  className: React.PropTypes.string
+};
 
 export default Card;

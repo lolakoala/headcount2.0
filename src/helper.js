@@ -20,7 +20,7 @@
     // skeleton into locationObjectArray for each location
      locationArray.forEach((district) => {
        locationObjectArray.push({
-         'location': district.toUpperCase(), 'data': { }, class: 'district-obj' });
+         'location': district.toUpperCase(), 'kidsInSchool': { }, class: 'district-obj' });
      });
     // finally, use locationObjectArray which now has object skeletons
     // as an accumulator
@@ -36,10 +36,10 @@
          return dataObj.Location.toUpperCase() === elem.location;
        });
        if (typeof dataObj.Data === 'number') {
-         objectWeNeed.data[dataObj.TimeFrame] =
+         objectWeNeed.kidsInSchool[dataObj.TimeFrame] =
          this.roundNumbers(dataObj.Data, 3);
        } else {
-         objectWeNeed.data[dataObj.TimeFrame] = 0;
+         objectWeNeed.kidsInSchool[dataObj.TimeFrame] = 0;
        }
        return acc;
      }, locationObjectArray);
