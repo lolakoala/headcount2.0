@@ -7,7 +7,7 @@ import DistrictRepository from '../../helper.js';
 describe('CardContainer', () => {
   let district = new DistrictRepository(kinderData);
   let info = district.cleanData;
-  let wrapper = shallow(<CardContainer info={info} />);
+  let wrapper = shallow(<CardContainer info={district} />);
   let cards = wrapper.find('Card');
 
   it('should render a card for each item in info prop', () => {
@@ -23,12 +23,12 @@ describe('CardContainer', () => {
     expect(cards.nodes[151].props.location).toEqual(info[151].location);
   });
 
-  it('should give yearAndData prop that corresponds to info.data', () => {
+  it('should give yearAndData prop that corresponds to info.kidsInSchool', () => {
 
-    expect(cards.nodes[1].props.yearAndData).toEqual(info[1].data);
-    expect(cards.nodes[67].props.yearAndData).toEqual(info[67].data);
-    expect(cards.nodes[111].props.yearAndData).toEqual(info[111].data);
-    expect(cards.nodes[180].props.yearAndData).toEqual(info[180].data);
+    expect(cards.nodes[1].props.yearAndData).toEqual(info[1].kidsInSchool);
+    expect(cards.nodes[67].props.yearAndData).toEqual(info[67].kidsInSchool);
+    expect(cards.nodes[111].props.yearAndData).toEqual(info[111].kidsInSchool);
+    expect(cards.nodes[180].props.yearAndData).toEqual(info[180].kidsInSchool);
   });
 
   it('should match the snapShot', () => {
