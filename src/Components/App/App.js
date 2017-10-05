@@ -10,7 +10,7 @@ class App extends Component {
     super();
     this.state = {
       info: new DistrictRepository(kinderData),
-      matches: []
+      string: ''
     };
     this.setState = this.setState.bind(this);
   }
@@ -20,10 +20,9 @@ class App extends Component {
         <h1 className="header">HeadCount</h1>
         <h2 className="secondHeader">Percentage of Kindergartners Enrolled in School</h2>
         <p className="instructions">Some instructions here</p>
-        <Search info={this.state.info}
-                setAppState={this.setState}/>
-        <CardContainer info={this.state.info.cleanData}
-                       matches={this.state.matches}/>
+        <Search setAppState={this.setState}/>
+        <CardContainer info={this.state.info}
+                       string={this.state.string}/>
 
       </div>
     );
