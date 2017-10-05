@@ -1,45 +1,51 @@
 import React, { Component } from 'react';
-import './Search.css'
-import DistrictRepository from '../../helper.js';
-import kinderData from '../../../data/kindergartners_in_full_day_program.js';
+import './Search.css';
 
-class Search extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchInput: ''
-    };
-  }
-
-  render() {
-    return (
-      <div className="searchContainer">
-      <input className="search" placeholder='Search by District'
-        type='text'
-        onChange={(event) => { this.searchCards(event); }}
-        defaultValue={this.state.searchInput} />
-      </div>
-    );
-  }
-
-  // setAndSearch(event) {
-  //   this.setState({ searchInput: event.target.value });
-  //   console.log(this.state.searchInput);
-  //   this.searchCards();
-  //
-  // }
-
-  searchCards(event) {
-    let matches = this.props.info.findAllMatches(event.target.value);
-    console.log(matches);
+const Search = ({ info, setAppState }) => {
+  let searchCards = (event) => {
+    let matches = info.findAllMatches(event.target.value);
     matches.forEach(dataObj => {
       dataObj.class = 'match';
     });
 
-    this.props.setAppState({ matches });
-  }
+    setAppState({ matches });
+  };
 
-}
+  return (
+    <div className="searchContainer">
+    <input className="search" placeholder='Search by District'
+      type='text'
+      onChange={(event) => { searchCards(event); }} />
+    </div>
+  );
+};
+
+
+// class Search extends Component {
+//   constructor(props) {
+//     super(props);
+//   }
+//
+//   render() {
+//     return (
+//       <div className="searchContainer">
+//       <input className="search" placeholder='Search by District'
+//         type='text'
+//         onChange={(event) => { this.searchCards(event); }} />
+//       </div>
+//     );
+//   }
+//
+//   searchCards(event) {
+//     let matches = this.props.info.findAllMatches(event.target.value);
+//     matches.forEach(dataObj => {
+//       dataObj.class = 'match';
+//     });
+//
+//     this.props.setAppState({ matches });
+//   }
+//
+// }
 
 // set state on searchinput is one letter behind
 // search functionality is slow as fuck
