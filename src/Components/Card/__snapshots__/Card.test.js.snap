@@ -8,22 +8,30 @@ ShallowWrapper {
     "findWhereUnwrapped": [Function],
   },
   "length": 1,
-  "node": <div>
+  "node": <div
+    className="card undefined"
+>
     <h3>
         Denver
     </h3>
     <ul>
-        <li>
+        <li
+            className="aboveHalf"
+        >
             2001
             : 
             0.99
         </li>
-        <li>
+        <li
+            className="aboveHalf"
+        >
             2002
             : 
             0.98
         </li>
-        <li>
+        <li
+            className="aboveHalf"
+        >
             2003
             : 
             0.97
@@ -31,22 +39,30 @@ ShallowWrapper {
     </ul>
 </div>,
   "nodes": Array [
-    <div>
+    <div
+      className="card undefined"
+>
       <h3>
             Denver
       </h3>
       <ul>
-            <li>
+            <li
+                  className="aboveHalf"
+            >
                   2001
                   : 
                   0.99
             </li>
-            <li>
+            <li
+                  className="aboveHalf"
+            >
                   2002
                   : 
                   0.98
             </li>
-            <li>
+            <li
+                  className="aboveHalf"
+            >
                   2003
                   : 
                   0.97
@@ -104,22 +120,30 @@ ShallowWrapper {
       "_pendingReplaceState": false,
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div>
+        "_currentElement": <div
+          className="card undefined"
+>
           <h3>
                     Denver
           </h3>
           <ul>
-                    <li>
+                    <li
+                              className="aboveHalf"
+                    >
                               2001
                               : 
                               0.99
                     </li>
-                    <li>
+                    <li
+                              className="aboveHalf"
+                    >
                               2002
                               : 
                               0.98
                     </li>
-                    <li>
+                    <li
+                              className="aboveHalf"
+                    >
                               2003
                               : 
                               0.97
@@ -127,22 +151,30 @@ ShallowWrapper {
           </ul>
 </div>,
         "_debugID": 2,
-        "_renderedOutput": <div>
+        "_renderedOutput": <div
+          className="card undefined"
+>
           <h3>
                     Denver
           </h3>
           <ul>
-                    <li>
+                    <li
+                              className="aboveHalf"
+                    >
                               2001
                               : 
                               0.99
                     </li>
-                    <li>
+                    <li
+                              className="aboveHalf"
+                    >
                               2002
                               : 
                               0.98
                     </li>
-                    <li>
+                    <li
+                              className="aboveHalf"
+                    >
                               2003
                               : 
                               0.97
