@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css'
+import PropTypes from 'prop-types';
 
 const Card = ({ location, yearAndData, className }) => {
   let yearAndDataKeys = Object.keys(yearAndData);

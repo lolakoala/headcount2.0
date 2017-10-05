@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Search.css';
+import PropTypes from 'prop-types';
 
 const Search = ({ info, setAppState }) => {
   let searchCards = (event) => {
@@ -20,34 +21,8 @@ const Search = ({ info, setAppState }) => {
   );
 };
 
-
-// class Search extends Component {
-//   constructor(props) {
-//     super(props);
-//   }
-//
-//   render() {
-//     return (
-//       <div className="searchContainer">
-//       <input className="search" placeholder='Search by District'
-//         type='text'
-//         onChange={(event) => { this.searchCards(event); }} />
-//       </div>
-//     );
-//   }
-//
-//   searchCards(event) {
-//     let matches = this.props.info.findAllMatches(event.target.value);
-//     matches.forEach(dataObj => {
-//       dataObj.class = 'match';
-//     });
-//
-//     this.props.setAppState({ matches });
-//   }
-//
-// }
-
-// set state on searchinput is one letter behind
-// search functionality is slow as fuck
+Search.propTypes = {
+  info: React.PropTypes.shape()
+};
 
 export default Search;
