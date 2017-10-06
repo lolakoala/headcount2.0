@@ -4,6 +4,7 @@ import DistrictRepository from '../../helper.js';
 import kinderData from '../../../data/kindergartners_in_full_day_program.js';
 import CardContainer from '../CardContainer/CardContainer.js';
 import Search from '../Search/Search.js';
+// import ComparisonContainer from '../ComparisonContainer/ComparisonContainer.js';
 
 class App extends Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends Component {
           Percentage of Kindergartners Enrolled in School
         </h2>
         <p className="instructions">Some instructions here</p>
+        {/* <ComparisonContainer /> */}
         <Search setAppState={this.setState}/>
         <CardContainer info={this.state.info}
                        string={this.state.string}/>
