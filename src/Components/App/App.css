@@ -1,6 +1,8 @@
 * {
   font-family: monospace;
-  /*background-color: #ACD0DD;*/ }
+  background-color: #ACD0DD; 
+}
+
 
 .header {
   font-family: cursive;
@@ -9,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 240px;
-  /*text-align: center;*/
+  text-align: center;
   font-size: 150px;
   margin: auto 0 auto 0;
   background-color: #ACD0DD; }
