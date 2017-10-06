@@ -6,6 +6,7 @@ import CardContainer from '../CardContainer/CardContainer.js';
 import Search from '../Search/Search.js';
 import css from '../css/css.js'
 
+
 class App extends Component {
   constructor() {
     super();
@@ -22,7 +23,9 @@ class App extends Component {
         <h2 className="secondHeader">
           Percentage of Kindergartners Enrolled in School
         </h2>
+
         <p className="instructions">Please select two districts to compare them!</p>
+
         <Search setAppState={this.setState}/>
         <CardContainer info={this.state.info}
                        string={this.state.string}/>

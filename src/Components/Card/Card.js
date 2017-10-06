@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css';
 import PropTypes from 'prop-types';
 
-const Card = ({ location, yearAndData, className }) => {
+const Card = ({ location, yearAndData, className, select }) => {
   let yearAndDataKeys = Object.keys(yearAndData);
   let listItems = yearAndDataKeys.map(key => {
     let liClass = 'aboveHalf';
@@ -16,17 +16,21 @@ const Card = ({ location, yearAndData, className }) => {
   });
 
   return (
-    <div className={`card ${className}`}>
+
+    <div className={`card ${className}`}
+         onClick={(location) => { select(location); }}>
       <h3 className="card-title">{location}</h3>
+
       <ul>{listItems}</ul>
     </div>
   );
 };
 
 Card.propTypes = {
-  location: React.PropTypes.string.isRequired,
-  yearAndData: React.PropTypes.object.isRequired,
-  className: React.PropTypes.string
+  location: PropTypes.string.isRequired,
+  yearAndData: PropTypes.object.isRequired,
+  className: PropTypes.string,
+  select: PropTypes.func.isRequired
 };
 
 export default Card;
