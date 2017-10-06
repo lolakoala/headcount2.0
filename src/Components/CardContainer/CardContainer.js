@@ -28,9 +28,6 @@ class CardContainer extends React.Component {
     this.setState({ comparing: this.state.comparing, comparingObj: Object.assign({}, compObj) });
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return nextState.comparing.length === 2;
-  }
 
   renderComparisons() {
     if (Object.keys(this.state.comparingObj).length) {
@@ -64,9 +61,9 @@ class CardContainer extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         {this.renderComparisons()}
-        {this.props.info.findAllMatches(this.props.string).map(dataObj =>
+        <div className= "container">{this.props.info.findAllMatches(this.props.string).map(dataObj =>
                               <Card location={dataObj.location}
                                     yearAndData={dataObj.kidsInSchool}
                                     className={
@@ -74,8 +71,7 @@ class CardContainer extends React.Component {
                                       }
                                     key={Math.random()}
                                     select={() => this.selectToCompare(dataObj.location)}/>
-
-        )}
+        )}</div>
       </div>
     );
   }
