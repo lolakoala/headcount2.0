@@ -15,7 +15,7 @@ const Search = ({ setAppState }) => {
 };
 
 Search.propTypes = {
-  setAppState: React.PropTypes.func.isRequired
+  setAppState: PropTypes.func.isRequired
 };
 
 export default Search;
