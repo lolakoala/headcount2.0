@@ -11,4 +11,15 @@
   background-color: #ACD0DD; }
 
 .card:hover {
-  background-color: #BABEA8; }
+  background-color: #A2BBC2; }
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold; }
+
+.aboveHalf {
+  font-weight: bold; }
+
+.belowHalf {
+  font-weight: lighter;
+  color: #7D215D; }
