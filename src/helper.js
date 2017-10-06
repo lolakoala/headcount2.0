@@ -96,14 +96,16 @@
    }
 
    compareDistrictAverages(string1, string2) {
-     let firstDistrictAverage = this.findAverage(string1);
-     let secondDistrictAverage = this.findAverage(string2);
+     let upperString1 = string1.toUpperCase();
+     let upperString2 = string2.toUpperCase();
+     let firstDistrictAverage = this.findAverage(upperString1);
+     let secondDistrictAverage = this.findAverage(upperString2);
      let largest = Math.max(firstDistrictAverage, secondDistrictAverage);
      let smallest = Math.min(firstDistrictAverage, secondDistrictAverage);
      let comparedAverage = smallest / largest;
      let roundedCompared = this.roundNumbers(comparedAverage, 3);
 
-     let objToReturn = Object.assign({}, {[string1]: firstDistrictAverage, [string2]: secondDistrictAverage, compared: roundedCompared})
+     let objToReturn = Object.assign({}, {[upperString1]: firstDistrictAverage, [upperString2]: secondDistrictAverage, compared: roundedCompared})
 
     //  let objToReturn = {string1: firstDistrictAverage, string2: secondDistrictAverage, compared: roundedCompared}
 

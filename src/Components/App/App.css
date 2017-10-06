@@ -1,9 +1,8 @@
-
-
 * {
   font-family: monospace;
   background-color: #ACD0DD; 
 }
+
 
 .header {
   font-family: cursive;
@@ -15,9 +14,7 @@
   text-align: center;
   font-size: 150px;
   margin: auto 0 auto 0;
-  background-color: #ACD0DD;
-}
-
+  background-color: #ACD0DD; }
 
 .secondHeader {
   color: #334855;
@@ -25,8 +22,7 @@
   text-align: center;
   background-color: #A2BBC2;
   margin: auto 0 auto 0;
-  padding-top: 20px;
-}
+  padding-top: 20px; }
 
 .instructions {
   color: #334855;
@@ -34,6 +30,4 @@
   text-align: center;
   background-color: #A2BBC2;
   margin: auto 0 auto 0;
-  padding: 20px 0 20px 0;
-}
-
+  padding: 20px 0 20px 0; }
