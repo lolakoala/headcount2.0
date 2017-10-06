@@ -81,6 +81,35 @@
        return this.cleanData;
      }
    }
+
+   findAverage(string1) {
+     let firstDistrictData = this.findByName(string1).kidsInSchool;
+     let firstDistrictDataKeys = Object.keys(firstDistrictData);
+
+     let total = firstDistrictDataKeys.reduce((acc, key) => {
+       acc += firstDistrictData[key];
+       return acc;
+     }, 0);
+
+     let averaged = total / firstDistrictDataKeys.length;
+     return this.roundNumbers(averaged, 3);
+   }
+
+   compareDistrictAverages(string1, string2) {
+     let firstDistrictAverage = this.findAverage(string1);
+     let secondDistrictAverage = this.findAverage(string2);
+     let largest = Math.max(firstDistrictAverage, secondDistrictAverage);
+     let smallest = Math.min(firstDistrictAverage, secondDistrictAverage);
+     let comparedAverage = smallest / largest;
+     let roundedCompared = this.roundNumbers(comparedAverage, 3);
+
+     let objToReturn = Object.assign({}, {[string1]: firstDistrictAverage, [string2]: secondDistrictAverage, compared: roundedCompared})
+
+    //  let objToReturn = {string1: firstDistrictAverage, string2: secondDistrictAverage, compared: roundedCompared}
+
+     return objToReturn;
+   }
+
  }
 
  module.exports = DistrictRepository;
