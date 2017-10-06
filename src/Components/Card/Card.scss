@@ -1,3 +1,5 @@
+@import '../css/variables.scss';
+
 .card {
   color: #334855;
   display: flex;
@@ -12,5 +14,20 @@
 }
 
 .card:hover {
-  background-color: #BABEA8;
+  background-color: $card-hover-color;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.aboveHalf {
+  font-weight: bold;
+}
+
+.belowHalf {
+  font-weight: lighter;
+  color: #7D215D;
 }

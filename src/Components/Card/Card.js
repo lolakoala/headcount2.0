@@ -17,7 +17,7 @@ const Card = ({ location, yearAndData, className }) => {
 
   return (
     <div className={`card ${className}`}>
-      <h3>{location}</h3>
+      <h3 className="card-title">{location}</h3>
       <ul>{listItems}</ul>
     </div>
   );
