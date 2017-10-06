@@ -1,14 +1,16 @@
 
+
 * {
   font-family: monospace;
   /*background-color: #ACD0DD;*/
 }
 
 
+
 .header {
   font-family: cursive;
   color: #390C28;
-  background-image:url("http://www.creativehdwallpapers.com/uploads/large/background/background-presentation-school-wallpapers.jpg");
+  background-image: url("http://www.creativehdwallpapers.com/uploads/large/background/background-presentation-school-wallpapers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 240px;
@@ -17,6 +19,7 @@
   margin: auto 0 auto 0;
   background-color: #ACD0DD;
 }
+
 
 .secondHeader {
   color: #334855;
@@ -35,3 +38,4 @@
   margin: auto 0 auto 0;
   padding: 20px 0 20px 0;
 }
+
