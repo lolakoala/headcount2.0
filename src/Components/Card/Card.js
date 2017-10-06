@@ -24,9 +24,9 @@ const Card = ({ location, yearAndData, className }) => {
 };
 
 Card.propTypes = {
-  location: React.PropTypes.string.isRequired,
-  yearAndData: React.PropTypes.object.isRequired,
-  className: React.PropTypes.string
+  location: PropTypes.string.isRequired,
+  yearAndData: PropTypes.object.isRequired,
+  className: PropTypes.string
 };
 
 export default Card;

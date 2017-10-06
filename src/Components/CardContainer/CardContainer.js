@@ -15,8 +15,8 @@ const CardContainer = ({ info, string }) =>
       </div>;
 
 CardContainer.propTypes = {
-  info: React.PropTypes.object.isRequired,
-  string: React.PropTypes.string
+  info: PropTypes.object.isRequired,
+  string: PropTypes.string
 };
 
 export default CardContainer;
