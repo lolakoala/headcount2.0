@@ -4,6 +4,8 @@ import { shallow, mount } from 'enzyme';
 import kinderData from '../../../data/kindergartners_in_full_day_program.js';
 import DistrictRepository from '../../helper.js';
 
+
+
 describe('CardContainer', () => {
   let district = new DistrictRepository(kinderData);
   let info = district.cleanData;
