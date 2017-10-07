@@ -10,12 +10,14 @@ const ComparisonCard = ({ firstDistrict, firstAvg, secondDistrict, secondAvg, co
         {firstDistrict}: {firstAvg}
       </h3>
       <div className="logo-and-compared">
-      <img src={leftArrow}
+      <img className="left-arrow"
+        src={leftArrow}
            alt='arrow pointing left' />
       <h2 className='compared-avg'>
         {comparedAvg}
       </h2>
-      <img src={rightArrow}
+      <img className="right-arrow"
+           src={rightArrow}
            alt='arrow pointing right' />
          </div>
       <h3 className='second-district'>

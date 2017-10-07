@@ -27,3 +27,23 @@
   justify-content: center;
   background-color: #938D60;
   margin-top: 40px; }
+
+.left-arrow {
+  height: 100px;
+  width: 100px; }
+
+.right-arrow {
+  height: 100px;
+  width: 100px; }
+
+@media only screen and (max-width: 1600px) {
+  .comparison-card {
+    width: 25%; } }
+
+@media only screen and (max-width: 1000px) {
+  .comparison-card {
+    width: 40%; } }
+
+@media only screen and (max-width: 700px) {
+  .comparison-card {
+    width: 60%; } }

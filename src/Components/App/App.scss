@@ -1,7 +1,7 @@
 @import '../css/variables.scss';
 
 * {
-  font-family: 'Roboto Mono', monospace;
+  font-family: monospace;
 }
 
 
@@ -35,3 +35,9 @@
   margin: auto 0 auto 0;
   padding: 20px 0 20px 0;
 }
+
+@media only screen and (max-width: 850px) {
+      .header {
+        font-size: 90px;
+          }
+        }
