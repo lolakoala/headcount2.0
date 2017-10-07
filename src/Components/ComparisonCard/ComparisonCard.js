@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import rightArrow from '../../../assets/right-arrow.png';
+import leftArrow from '../../../assets/left-arrow.png';
 
 const ComparisonCard = ({ firstDistrict, firstAvg, secondDistrict, secondAvg, comparedAvg }) => {
   return (
@@ -7,12 +9,12 @@ const ComparisonCard = ({ firstDistrict, firstAvg, secondDistrict, secondAvg, co
       <h3 className='first-district'>
         {firstDistrict}: {firstAvg}
       </h3>
-      <img src='http://www.iconsdb.com/icons/preview/purple/arrow-left-xl.png'
+      <img src={leftArrow}
            alt='arrow pointing left' />
       <h2 className='compared-avg'>
         {comparedAvg}
       </h2>
-      <img src='http://www.iconsdb.com/icons/preview/purple/arrow-right-xl.png'
+      <img src={rightArrow}
            alt='arrow pointing right' />
       <h3 className='second-district'>
         {secondDistrict}: {secondAvg}
