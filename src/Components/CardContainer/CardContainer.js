@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card.js';
 import ComparisonCard from '../ComparisonCard/ComparisonCard.js';
-import './CardContainer.css';
 import PropTypes from 'prop-types';
 
 class CardContainer extends React.Component {
@@ -23,7 +22,9 @@ class CardContainer extends React.Component {
     }
     this.setState({ comparing: this.state.comparing });
     if (this.state.comparing.length === 2) {
-      let compObj = this.props.info.compareDistrictAverages(this.state.comparing[0], this.state.comparing[1]);
+      let compObj = this.props.info
+      .compareDistrictAverages(this.state.comparing[0],
+        this.state.comparing[1]);
       this.setState({ comparingObj: Object.assign({}, compObj) });
     }
   }
@@ -57,27 +58,37 @@ class CardContainer extends React.Component {
                 key={Math.random()}
                 select={() => this.selectToCompare(secondToCompare.location)}/>
          </div>
-      <button className="clear-button" onClick={() => this.clearComparisons()}>Clear Comparisons</button>
+      <button className="clear-button"
+              onClick={() => this.clearComparisons()}>
+              Clear Comparisons
+      </button>
     </div>
       );
     }
   }
 
-
+  renderCards() {
+    return (
+      this.props.info.findAllMatches(this.props.string).map(dataObj =>
+        <Card location={dataObj.location}
+              yearAndData={dataObj.kidsInSchool}
+              className={
+                this.state.comparing.includes(dataObj.location) ?
+                'selected' : dataObj.class
+                }
+              key={Math.random()}
+              select={() => this.selectToCompare(dataObj.location)}/>
+      )
+    );
+  }
 
   render() {
     return (
       <div>
         {this.renderComparisons()}
-        <div className= "container">{this.props.info.findAllMatches(this.props.string).map(dataObj =>
-                              <Card location={dataObj.location}
-                                    yearAndData={dataObj.kidsInSchool}
-                                    className={
-                                      this.state.comparing.includes(dataObj.location) ? 'selected' : dataObj.class
-                                      }
-                                    key={Math.random()}
-                                    select={() => this.selectToCompare(dataObj.location)}/>
-        )}</div>
+        <div className="container">
+          {this.renderCards()}
+        </div>
       </div>
     );
   }

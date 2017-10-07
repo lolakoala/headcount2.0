@@ -25,11 +25,9 @@ describe('Card', () => {
     let listItems = wrapper.find('li');
     let yearAndDataKeys = Object.keys(yearAndData);
 
-    expect(listItems.nodes[0].props.children.join(''))
+    expect(listItems.first().text())
     .toEqual(`${yearAndDataKeys[0]}: ${yearAndData[yearAndDataKeys[0]]}`);
-    expect(listItems.nodes[1].props.children.join(''))
-    .toEqual(`${yearAndDataKeys[1]}: ${yearAndData[yearAndDataKeys[1]]}`);
-    expect(listItems.nodes[2].props.children.join(''))
+    expect(listItems.last().text())
     .toEqual(`${yearAndDataKeys[2]}: ${yearAndData[yearAndDataKeys[2]]}`);
   });
 

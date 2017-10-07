@@ -1,5 +1,4 @@
 import React from 'react';
-import './Search.css';
 import PropTypes from 'prop-types';
 
 const Search = ({ setAppState }) => {
@@ -8,7 +7,6 @@ const Search = ({ setAppState }) => {
     <input className="search" placeholder='Search by District'
       type='text'
       onChange={(event) => { setAppState({ string: event.target.value }); }}
-      // value={event.target.value}
     />
     </div>
   );

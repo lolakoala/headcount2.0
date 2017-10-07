@@ -18,19 +18,25 @@ ShallowWrapper {
         : 
         0.5
     </h3>
-    <img
-        alt="arrow pointing left"
-        src="http://www.iconsdb.com/icons/preview/purple/arrow-left-xl.png"
-    />
-    <h2
-        className="compared-avg"
+    <div
+        className="logo-and-compared"
     >
-        0.65
-    </h2>
-    <img
-        alt="arrow pointing right"
-        src="http://www.iconsdb.com/icons/preview/purple/arrow-right-xl.png"
-    />
+        <img
+            alt="arrow pointing left"
+            className="left-arrow"
+            src="left-arrow.png"
+        />
+        <h2
+            className="compared-avg"
+        >
+            0.65
+        </h2>
+        <img
+            alt="arrow pointing right"
+            className="right-arrow"
+            src="right-arrow.png"
+        />
+    </div>
     <h3
         className="second-district"
     >
@@ -50,19 +56,25 @@ ShallowWrapper {
             : 
             0.5
       </h3>
-      <img
-            alt="arrow pointing left"
-            src="http://www.iconsdb.com/icons/preview/purple/arrow-left-xl.png"
-      />
-      <h2
-            className="compared-avg"
+      <div
+            className="logo-and-compared"
       >
-            0.65
-      </h2>
-      <img
-            alt="arrow pointing right"
-            src="http://www.iconsdb.com/icons/preview/purple/arrow-right-xl.png"
-      />
+            <img
+                  alt="arrow pointing left"
+                  className="left-arrow"
+                  src="left-arrow.png"
+            />
+            <h2
+                  className="compared-avg"
+            >
+                  0.65
+            </h2>
+            <img
+                  alt="arrow pointing right"
+                  className="right-arrow"
+                  src="right-arrow.png"
+            />
+      </div>
       <h3
             className="second-district"
       >
@@ -128,19 +140,25 @@ ShallowWrapper {
                     : 
                     0.5
           </h3>
-          <img
-                    alt="arrow pointing left"
-                    src="http://www.iconsdb.com/icons/preview/purple/arrow-left-xl.png"
-          />
-          <h2
-                    className="compared-avg"
+          <div
+                    className="logo-and-compared"
           >
-                    0.65
-          </h2>
-          <img
-                    alt="arrow pointing right"
-                    src="http://www.iconsdb.com/icons/preview/purple/arrow-right-xl.png"
-          />
+                    <img
+                              alt="arrow pointing left"
+                              className="left-arrow"
+                              src="left-arrow.png"
+                    />
+                    <h2
+                              className="compared-avg"
+                    >
+                              0.65
+                    </h2>
+                    <img
+                              alt="arrow pointing right"
+                              className="right-arrow"
+                              src="right-arrow.png"
+                    />
+          </div>
           <h3
                     className="second-district"
           >
@@ -160,19 +178,25 @@ ShallowWrapper {
                     : 
                     0.5
           </h3>
-          <img
-                    alt="arrow pointing left"
-                    src="http://www.iconsdb.com/icons/preview/purple/arrow-left-xl.png"
-          />
-          <h2
-                    className="compared-avg"
+          <div
+                    className="logo-and-compared"
           >
-                    0.65
-          </h2>
-          <img
-                    alt="arrow pointing right"
-                    src="http://www.iconsdb.com/icons/preview/purple/arrow-right-xl.png"
-          />
+                    <img
+                              alt="arrow pointing left"
+                              className="left-arrow"
+                              src="left-arrow.png"
+                    />
+                    <h2
+                              className="compared-avg"
+                    >
+                              0.65
+                    </h2>
+                    <img
+                              alt="arrow pointing right"
+                              className="right-arrow"
+                              src="right-arrow.png"
+                    />
+          </div>
           <h3
                     className="second-district"
           >

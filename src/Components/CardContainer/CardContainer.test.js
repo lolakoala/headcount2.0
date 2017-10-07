@@ -40,6 +40,7 @@ describe('CardContainer', () => {
   it('should not render comparison-container if comparing array is empty', () => {
     let comparisonContainer = mountContainer.find('.compare-and-button');
 
+    expect(mountContainer.state().comparing).toEqual([]);
     expect(comparisonContainer.length).toEqual(0);
   });
 
