@@ -14,8 +14,12 @@ ul {
   margin: 20px 20px 20px 20px;
   background-color: #ACD0DD; }
 
+.card:hover {
+  cursor: pointer; }
+
 .hover:hover {
-  background-color: #A2BBC2; }
+  background-color: #A2BBC2;
+  cursor: pointer; }
   .hover:hover .hover {
     background-color: #A2BBC2; }
 
@@ -28,13 +32,14 @@ ul {
 
 .belowHalf {
   font-weight: lighter;
-  color: #7D215D; }
+  color: #572F18; }
 
 .clear-button {
-  width: 200px;
-  height: 50px;
-  box-shadow: 4px 4px 2px #555555;
+  width: 300px;
+  height: 70px;
   border-radius: 25px;
-  background-color: #62BC27;
-  font-size: 16px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 24px;
   font-weight: bold; }

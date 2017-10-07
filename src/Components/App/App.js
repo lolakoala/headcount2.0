@@ -18,7 +18,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="main">
         <h1 className="header">HeadCount</h1>
         <h2 className="secondHeader">
           Percentage of Kindergartners Enrolled in School
