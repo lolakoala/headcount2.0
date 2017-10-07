@@ -36,23 +36,26 @@ class CardContainer extends React.Component {
       let secondToCompare = this.props.info.findByName(comparing[1]);
       let comparingObj = this.state.comparingObj;
       return (
-        <div className="compare-container">
-        <Card location={firstToCompare.location}
-              yearAndData={firstToCompare.kidsInSchool}
-              className={'selected'}
-              key={Math.random()}
-              select={() => this.selectToCompare(firstToCompare.location)}/>
-        <ComparisonCard firstDistrict={comparing[0]}
-                        firstAvg={comparingObj[comparing[0]]}
-                        secondDistrict={comparing[1]}
-                        secondAvg={comparingObj[comparing[1]]}
-                        comparedAvg={comparingObj.compared}/>
-        <Card location={secondToCompare.location}
-              yearAndData={secondToCompare.kidsInSchool}
-              className={'selected'}
-              key={Math.random()}
-              select={() => this.selectToCompare(secondToCompare.location)}/>
-       </div>
+        <div className='compare-and-button'>
+          <div className="compare-container">
+          <Card location={firstToCompare.location}
+                yearAndData={firstToCompare.kidsInSchool}
+                className={'selected'}
+                key={Math.random()}
+                select={() => this.selectToCompare(firstToCompare.location)}/>
+          <ComparisonCard firstDistrict={comparing[0]}
+                          firstAvg={comparingObj[comparing[0]]}
+                          secondDistrict={comparing[1]}
+                          secondAvg={comparingObj[comparing[1]]}
+                          comparedAvg={comparingObj.compared}/>
+          <Card location={secondToCompare.location}
+                yearAndData={secondToCompare.kidsInSchool}
+                className={'selected'}
+                key={Math.random()}
+                select={() => this.selectToCompare(secondToCompare.location)}/>
+         </div>
+         <button>Clear Comparisons</button>
+      </div>
       );
     }
   }
