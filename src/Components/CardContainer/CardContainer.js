@@ -14,7 +14,10 @@ class CardContainer extends React.Component {
   }
 
   selectToCompare = (string) => {
-     this.state.comparing.unshift(string);
+    if (this.state.comparing.includes(string)) {
+      return;
+    }
+    this.state.comparing.unshift(string);
     if (this.state.comparing.length > 2) {
       this.state.comparing.pop();
     }
