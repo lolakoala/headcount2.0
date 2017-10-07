@@ -28,6 +28,9 @@ class CardContainer extends React.Component {
     this.setState({ comparing: this.state.comparing, comparingObj: Object.assign({}, compObj) });
   }
 
+  clearComparisons = () => {
+    this.setState({ comparing: [], comparingObj: {} });
+  }
 
   renderComparisons() {
     if (Object.keys(this.state.comparingObj).length) {
@@ -54,7 +57,7 @@ class CardContainer extends React.Component {
                 key={Math.random()}
                 select={() => this.selectToCompare(secondToCompare.location)}/>
          </div>
-         <button>Clear Comparisons</button>
+         <button onClick={() => this.clearComparisons()}>Clear Comparisons</button>
       </div>
       );
     }
