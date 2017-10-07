@@ -20,6 +20,7 @@ ul {
 
 .card:hover{
   cursor: pointer;
+  border: 5px solid white;
 }
 
 .hover:hover {
@@ -37,12 +38,23 @@ ul {
 
 .aboveHalf {
   font-weight: bold;
+}
 
+.check-mark {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .belowHalf {
   font-weight: lighter;
   color: $poop;
+}
+
+.x-mark {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .clear-button {

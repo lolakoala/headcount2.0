@@ -7,11 +7,13 @@ import xMark from '../../../assets/x-mark-xl.png';
 const Card = ({ location, yearAndData, className, select }) => {
   let yearAndDataKeys = Object.keys(yearAndData);
   let listItems = yearAndDataKeys.map(key => {
-    let img = <img src={checkMark}
+    let img = <img className="check-mark"
+                   src={checkMark}
                    alt='check mark, above half'/>;
     let liClass = 'aboveHalf';
     if (yearAndData[key] < 0.5) {
-      img = <img src={xMark}
+      img = <img className="x-mark"
+                 src={xMark}
                  alt='x mark, below half'/>;
       liClass = 'belowHalf';
     }
