@@ -3,3 +3,12 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #A2BBC2; }
+
+.compare-and-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #A2BBC2; }
+
+.clear-button {
+  align-self: center;
+  margin: 30px 0px 80px 0px; }
