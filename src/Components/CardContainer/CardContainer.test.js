@@ -38,29 +38,37 @@ describe('CardContainer', () => {
   });
 
   it('should not render comparison-container if comparing array is empty', () => {
+    let comparisonContainer = mountContainer.find('.compare-and-button');
 
-  });
-
-  it('should render comparison-container if comparingObj has contents', () => {
-
-  });
-
-  it('should compare 2 cards and return comparing Obj', () => {
-
+    expect(comparisonContainer.length).toEqual(0);
   });
 
   it('should put card in comparing array when clicked', () => {
-    expect(mountContainer.state().comparing).toEqual([]);
-
     let card1 = mountContainer.find('Card').first();
 
+    expect(mountContainer.state().comparing).toEqual([]);
     card1.simulate('click');
     expect(mountContainer.state().comparing).toEqual(['COLORADO']);
 
   });
 
   it('should generate comparing Obj when 2 cards in comparing array', () => {
-    console.log(mountContainer.state().comparing)
+    let card2 = mountContainer.find('Card').last();
+
+    expect(mountContainer.state().comparing.length).toEqual(1);
+    card2.simulate('click');
+    expect(mountContainer.state().comparing.length).toEqual(2);
+    expect(mountContainer.state().comparingObj).toEqual({
+      'YUMA SCHOOL DISTRICT 1': 0.909,
+      COLORADO: 0.53,
+      compared: 0.583
+    });
+  });
+
+  it('should render comparison-container if comparingObj has contents', () => {
+    let comparisonContainer = mountContainer.find('.compare-and-button');
+
+    expect(comparisonContainer.length).toEqual(1);
   });
 
 });
