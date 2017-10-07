@@ -3,7 +3,7 @@ import Search from './Search.js';
 import { shallow } from 'enzyme';
 
 describe('Search', () => {
-  let wrapper = shallow(<Search />);
+  let wrapper = shallow(<Search setAppState={jest.fn()}/>);
 
   it('should have a search container', () => {
     let searchContainer = wrapper.find('.searchContainer');

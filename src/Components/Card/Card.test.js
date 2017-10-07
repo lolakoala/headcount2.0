@@ -5,7 +5,8 @@ import { shallow } from 'enzyme';
 describe('Card', () => {
   let yearAndData = { '2001': .99, '2002': .98, '2003': .97 };
   let wrapper = shallow(<Card location='Denver'
-    yearAndData={yearAndData}/>);
+                              yearAndData={yearAndData}
+                              select={jest.fn()}/>);
 
   it('should have a district', () => {
     let district = wrapper.find('h3');

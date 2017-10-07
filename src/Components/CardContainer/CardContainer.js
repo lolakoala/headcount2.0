@@ -14,18 +14,15 @@ class CardContainer extends React.Component {
   }
 
   selectToCompare = (string) => {
-    if (this.state.comparing.includes(string)) {
-      let stringIndex = this.state.comparing.findIndex(elem => elem === string);
-      this.state.comparing.splice(stringIndex, 1);
-      this.setState({ comparing: this.state.comparing });
-      return;
-    }
-    if (this.state.comparing.length === 2) {
+     this.state.comparing.unshift(string);
+    if (this.state.comparing.length > 2) {
       this.state.comparing.pop();
     }
-    this.state.comparing.unshift(string);
-    let compObj = this.props.info.compareDistrictAverages(this.state.comparing[0], this.state.comparing[1]);
-    this.setState({ comparing: this.state.comparing, comparingObj: Object.assign({}, compObj) });
+    this.setState({ comparing: this.state.comparing });
+    if (this.state.comparing.length === 2) {
+      let compObj = this.props.info.compareDistrictAverages(this.state.comparing[0], this.state.comparing[1]);
+      this.setState({ comparingObj: Object.assign({}, compObj) });
+    }
   }
 
   clearComparisons = () => {
