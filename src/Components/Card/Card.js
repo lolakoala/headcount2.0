@@ -10,18 +10,18 @@ const Card = ({ location, yearAndData, className, select }) => {
       liClass = 'belowHalf';
     }
     return (<li key={Math.random()}
-                className={liClass}>
+                className={`hover ${liClass}`}>
               {key}: {yearAndData[key]}
             </li>);
   });
 
   return (
 
-    <div className={`card ${className}`}
+    <div className={`hover card ${className}`}
          onClick={(location) => { select(location); }}>
-      <h3 className="card-title">{location}</h3>
+      <h3 className="hover card-title">{location}</h3>
 
-      <ul>{listItems}</ul>
+      <ul className="hover card-list">{listItems}</ul>
     </div>
   );
 };

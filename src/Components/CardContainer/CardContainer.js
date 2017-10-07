@@ -57,8 +57,8 @@ class CardContainer extends React.Component {
                 key={Math.random()}
                 select={() => this.selectToCompare(secondToCompare.location)}/>
          </div>
-         <button onClick={() => this.clearComparisons()}>Clear Comparisons</button>
-      </div>
+      <button className="clear-button" onClick={() => this.clearComparisons()}>Clear Comparisons</button>
+    </div>
       );
     }
   }
