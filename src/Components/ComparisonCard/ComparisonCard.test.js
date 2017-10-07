@@ -39,4 +39,8 @@ describe('ComparisonCard', () => {
     expect(comparedNum.length).toEqual(1);
     expect(comparedNum.text()).toEqual('0.65');
   });
+
+  it('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
