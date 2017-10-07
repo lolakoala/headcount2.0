@@ -15,7 +15,8 @@ ul {
   background-color: #ACD0DD; }
 
 .card:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  border: 5px solid white; }
 
 .hover:hover {
   background-color: #A2BBC2;
@@ -30,9 +31,19 @@ ul {
 .aboveHalf {
   font-weight: bold; }
 
+.check-mark {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px; }
+
 .belowHalf {
   font-weight: lighter;
   color: #572F18; }
+
+.x-mark {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px; }
 
 .clear-button {
   width: 300px;
