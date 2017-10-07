@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto Mono', monospace; }
+  font-family: monospace; }
 
 .header {
   font-family: serif;
@@ -28,3 +28,7 @@
   background-color: rgba(56, 78, 88, 0.96);
   margin: auto 0 auto 0;
   padding: 20px 0 20px 0; }
+
+@media only screen and (max-width: 850px) {
+  .header {
+    font-size: 90px; } }
