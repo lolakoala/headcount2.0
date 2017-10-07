@@ -1,31 +1,30 @@
 * {
-  font-family: monospace;
-  background-color: #ACD0DD; 
-}
-
+  font-family: 'Roboto Mono', monospace; }
 
 .header {
-  font-family: cursive;
-  color: #390C28;
-  background-image: url("http://www.creativehdwallpapers.com/uploads/large/background/background-presentation-school-wallpapers.jpg");
+  font-family: serif;
+  color: #d9d9d9;
+  padding-top: 105px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/ADli4De.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 240px;
+  height: 300px;
   font-size: 150px;
   margin: auto 0 auto 0; }
 
 .secondHeader {
-  color: #334855;
+  color: #d9d9d9;
   font-size: 26px;
   text-align: center;
-  background-color: #A2BBC2;
+  background-color: rgba(56, 78, 88, 0.96);
   margin: auto 0 auto 0;
   padding-top: 20px; }
 
 .instructions {
-  color: #334855;
+  color: #d9d9d9;
   font-size: 18px;
   text-align: center;
-  background-color: #A2BBC2;
+  background-color: rgba(56, 78, 88, 0.96);
   margin: auto 0 auto 0;
   padding: 20px 0 20px 0; }

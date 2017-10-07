@@ -1,17 +1,27 @@
+ul {
+  list-style: none; }
+
 .card {
   color: #334855;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 2px solid #555555;
   border-radius: 5%;
   box-shadow: 4px 4px 2px #555555;
-  width: 18%;
-  margin: 5px 5px 5px 5px;
+  width: 12%;
+  margin: 20px 20px 20px 20px;
   background-color: #ACD0DD; }
 
 .card:hover {
-  background-color: #A2BBC2; }
+  cursor: pointer; }
+
+.hover:hover {
+  background-color: #A2BBC2;
+  cursor: pointer; }
+  .hover:hover .hover {
+    background-color: #A2BBC2; }
 
 .card-title {
   font-size: 16px;
@@ -22,4 +32,14 @@
 
 .belowHalf {
   font-weight: lighter;
-  color: #7D215D; }
+  color: #572F18; }
+
+.clear-button {
+  width: 300px;
+  height: 70px;
+  border-radius: 25px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold; }
