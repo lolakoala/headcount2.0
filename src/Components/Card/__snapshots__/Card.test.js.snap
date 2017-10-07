@@ -9,32 +9,49 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="card undefined Denver"
+    className="hover card undefined"
     onClick={[Function]}
 >
     <h3
-        className="card-title"
+        className="hover card-title"
     >
         Denver
     </h3>
-    <ul>
+    <ul
+        className="hover card-list"
+    >
         <li
-            className="aboveHalf"
+            className="hover aboveHalf"
         >
+            <img
+                alt="check mark, above half"
+                className="check-mark"
+                src="checkmark-xl.png"
+            />
             2001
             : 
             0.99
         </li>
         <li
-            className="aboveHalf"
+            className="hover aboveHalf"
         >
+            <img
+                alt="check mark, above half"
+                className="check-mark"
+                src="checkmark-xl.png"
+            />
             2002
             : 
             0.98
         </li>
         <li
-            className="aboveHalf"
+            className="hover aboveHalf"
         >
+            <img
+                alt="check mark, above half"
+                className="check-mark"
+                src="checkmark-xl.png"
+            />
             2003
             : 
             0.97
@@ -43,32 +60,49 @@ ShallowWrapper {
 </div>,
   "nodes": Array [
     <div
-      className="card undefined Denver"
+      className="hover card undefined"
       onClick={[Function]}
 >
       <h3
-            className="card-title"
+            className="hover card-title"
       >
             Denver
       </h3>
-      <ul>
+      <ul
+            className="hover card-list"
+      >
             <li
-                  className="aboveHalf"
+                  className="hover aboveHalf"
             >
+                  <img
+                        alt="check mark, above half"
+                        className="check-mark"
+                        src="checkmark-xl.png"
+                  />
                   2001
                   : 
                   0.99
             </li>
             <li
-                  className="aboveHalf"
+                  className="hover aboveHalf"
             >
+                  <img
+                        alt="check mark, above half"
+                        className="check-mark"
+                        src="checkmark-xl.png"
+                  />
                   2002
                   : 
                   0.98
             </li>
             <li
-                  className="aboveHalf"
+                  className="hover aboveHalf"
             >
+                  <img
+                        alt="check mark, above half"
+                        className="check-mark"
+                        src="checkmark-xl.png"
+                  />
                   2003
                   : 
                   0.97
@@ -129,32 +163,49 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="card undefined Denver"
+          className="hover card undefined"
           onClick={[Function]}
 >
           <h3
-                    className="card-title"
+                    className="hover card-title"
           >
                     Denver
           </h3>
-          <ul>
+          <ul
+                    className="hover card-list"
+          >
                     <li
-                              className="aboveHalf"
+                              className="hover aboveHalf"
                     >
+                              <img
+                                        alt="check mark, above half"
+                                        className="check-mark"
+                                        src="checkmark-xl.png"
+                              />
                               2001
                               : 
                               0.99
                     </li>
                     <li
-                              className="aboveHalf"
+                              className="hover aboveHalf"
                     >
+                              <img
+                                        alt="check mark, above half"
+                                        className="check-mark"
+                                        src="checkmark-xl.png"
+                              />
                               2002
                               : 
                               0.98
                     </li>
                     <li
-                              className="aboveHalf"
+                              className="hover aboveHalf"
                     >
+                              <img
+                                        alt="check mark, above half"
+                                        className="check-mark"
+                                        src="checkmark-xl.png"
+                              />
                               2003
                               : 
                               0.97
@@ -163,32 +214,49 @@ ShallowWrapper {
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
-          className="card undefined Denver"
+          className="hover card undefined"
           onClick={[Function]}
 >
           <h3
-                    className="card-title"
+                    className="hover card-title"
           >
                     Denver
           </h3>
-          <ul>
+          <ul
+                    className="hover card-list"
+          >
                     <li
-                              className="aboveHalf"
+                              className="hover aboveHalf"
                     >
+                              <img
+                                        alt="check mark, above half"
+                                        className="check-mark"
+                                        src="checkmark-xl.png"
+                              />
                               2001
                               : 
                               0.99
                     </li>
                     <li
-                              className="aboveHalf"
+                              className="hover aboveHalf"
                     >
+                              <img
+                                        alt="check mark, above half"
+                                        className="check-mark"
+                                        src="checkmark-xl.png"
+                              />
                               2002
                               : 
                               0.98
                     </li>
                     <li
-                              className="aboveHalf"
+                              className="hover aboveHalf"
                     >
+                              <img
+                                        alt="check mark, above half"
+                                        className="check-mark"
+                                        src="checkmark-xl.png"
+                              />
                               2003
                               : 
                               0.97

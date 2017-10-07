@@ -1,5 +1,5 @@
-import App from '../App/App.css';
-import Card from '../Card/Card.css';
-import CardContainer from '../CardContainer/CardContainer.css';
-import Search from '../Search/Search.css';
-import ComparisonCard from '../ComparisonCard/ComparisonCard.css';
+import '../App/App.css';
+import '../Card/Card.css';
+import '../CardContainer/CardContainer.css';
+import '../Search/Search.css';
+import '../ComparisonCard/ComparisonCard.css';
