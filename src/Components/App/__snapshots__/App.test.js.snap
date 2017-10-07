@@ -22,7 +22,7 @@ ShallowWrapper {
     <p
         className="instructions"
     >
-        Some instructions here
+        Please select two districts to compare them!
     </p>
     <Search
         setAppState={[Function]}
@@ -3129,7 +3129,7 @@ ShallowWrapper {
       <p
             className="instructions"
       >
-            Some instructions here
+            Please select two districts to compare them!
       </p>
       <Search
             setAppState={[Function]}
@@ -9354,7 +9354,7 @@ ShallowWrapper {
           <p
                     className="instructions"
           >
-                    Some instructions here
+                    Please select two districts to compare them!
           </p>
           <Search
                     setAppState={[Function]}
@@ -12461,7 +12461,7 @@ ShallowWrapper {
           <p
                     className="instructions"
           >
-                    Some instructions here
+                    Please select two districts to compare them!
           </p>
           <Search
                     setAppState={[Function]}

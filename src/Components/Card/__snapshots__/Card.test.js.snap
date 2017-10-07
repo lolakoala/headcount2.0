@@ -9,9 +9,12 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <div
-    className="card undefined"
+    className="card undefined Denver"
+    onClick={[Function]}
 >
-    <h3>
+    <h3
+        className="card-title"
+    >
         Denver
     </h3>
     <ul>
@@ -40,9 +43,12 @@ ShallowWrapper {
 </div>,
   "nodes": Array [
     <div
-      className="card undefined"
+      className="card undefined Denver"
+      onClick={[Function]}
 >
-      <h3>
+      <h3
+            className="card-title"
+      >
             Denver
       </h3>
       <ul>
@@ -78,6 +84,7 @@ ShallowWrapper {
       "_context": Object {},
       "_currentElement": <Card
         location="Denver"
+        select={[Function]}
         yearAndData={
                 Object {
                         "2001": 0.99,
@@ -94,6 +101,7 @@ ShallowWrapper {
         "context": Object {},
         "props": Object {
           "location": "Denver",
+          "select": [Function],
           "yearAndData": Object {
             "2001": 0.99,
             "2002": 0.98,
@@ -121,9 +129,12 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <div
-          className="card undefined"
+          className="card undefined Denver"
+          onClick={[Function]}
 >
-          <h3>
+          <h3
+                    className="card-title"
+          >
                     Denver
           </h3>
           <ul>
@@ -152,9 +163,12 @@ ShallowWrapper {
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div
-          className="card undefined"
+          className="card undefined Denver"
+          onClick={[Function]}
 >
-          <h3>
+          <h3
+                    className="card-title"
+          >
                     Denver
           </h3>
           <ul>
@@ -194,6 +208,7 @@ ShallowWrapper {
   "root": [Circular],
   "unrendered": <Card
     location="Denver"
+    select={[Function]}
     yearAndData={
         Object {
             "2001": 0.99,
