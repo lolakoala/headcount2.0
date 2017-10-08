@@ -25,24 +25,28 @@ describe('CardContainer', () => {
     expect(cards.nodes[151].props.location).toEqual(info[151].location);
   });
 
-  it('should give yearAndData prop that corresponds to info.kidsInSchool', () => {
+  it('should give yearAndData prop that corresponds to info.kidsInSchool',
+    () => {
 
-    expect(cards.nodes[1].props.yearAndData).toEqual(info[1].kidsInSchool);
-    expect(cards.nodes[67].props.yearAndData).toEqual(info[67].kidsInSchool);
-    expect(cards.nodes[111].props.yearAndData).toEqual(info[111].kidsInSchool);
-    expect(cards.nodes[180].props.yearAndData).toEqual(info[180].kidsInSchool);
-  });
+      expect(cards.nodes[1].props.yearAndData).toEqual(info[1].kidsInSchool);
+      expect(cards.nodes[67].props.yearAndData).toEqual(info[67].kidsInSchool);
+      expect(cards.nodes[111].props.yearAndData)
+      .toEqual(info[111].kidsInSchool);
+      expect(cards.nodes[180].props.yearAndData)
+      .toEqual(info[180].kidsInSchool);
+    });
 
   it('should match the snapShot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should not render comparison-container if comparing array is empty', () => {
-    let comparisonContainer = mountContainer.find('.compare-and-button');
+  it('should not render comparison-container if comparing array is empty',
+    () => {
+      let comparisonContainer = mountContainer.find('.compare-and-button');
 
-    expect(mountContainer.state().comparing).toEqual([]);
-    expect(comparisonContainer.length).toEqual(0);
-  });
+      expect(mountContainer.state().comparing).toEqual([]);
+      expect(comparisonContainer.length).toEqual(0);
+    });
 
   it('should put card in comparing array when clicked', () => {
     let card1 = mountContainer.find('Card').first();

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import checkMark from '../../../assets/checkmark-xl.png';
 import xMark from '../../../assets/x-mark-xl.png';
 
-const Card = ({ location, yearAndData, className, select }) => {
+const Card = ({ location, yearAndData, className, select, tabIndex }) => {
   let yearAndDataKeys = Object.keys(yearAndData);
   let listItems = yearAndDataKeys.map(key => {
     let img = <img className="check-mark"
@@ -26,8 +26,14 @@ const Card = ({ location, yearAndData, className, select }) => {
 
   return (
 
-    <div className={`hover card ${className}`} 
-         onClick={(location) => { select(location); }}>
+    <div className={`hover card ${className}`}
+         onClick={(location) => { select(location); }}
+         onKeyUp={(event, location) => {
+           if (event.which === 13) {
+             select(location);
+           }
+         }}
+         tabIndex={tabIndex}>
       <h3 className="hover card-title">{location}</h3>
       <ul className="hover card-list">{listItems}</ul>
     </div>
@@ -38,7 +44,8 @@ Card.propTypes = {
   location: PropTypes.string.isRequired,
   yearAndData: PropTypes.object.isRequired,
   className: PropTypes.string,
-  select: PropTypes.func.isRequired
+  select: PropTypes.func.isRequired,
+  tabIndex: PropTypes.number
 };
 
 export default Card;

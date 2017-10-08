@@ -16,4 +16,4 @@ describe('Search', () => {
 
     expect(input.length).toEqual(1);
   });
-})
+});

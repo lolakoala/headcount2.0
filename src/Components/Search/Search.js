@@ -7,6 +7,7 @@ const Search = ({ setAppState }) => {
     <input className="search" placeholder='Search by District'
       type='text'
       onChange={(event) => { setAppState({ string: event.target.value }); }}
+      aria-label="Search by district."
     />
     </div>
   );

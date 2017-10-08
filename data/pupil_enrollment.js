@@ -1,5 +1,5 @@
-module.exports = {
-  [
+module.exports =
+[
   {
     "Location": "Colorado",
     "TimeFrame": 2009,
@@ -6516,5 +6516,4 @@ module.exports = {
     "DataFormat": "Number",
     "Data": 824
   }
-]
-}
+];

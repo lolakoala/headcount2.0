@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import rightArrow from '../../../assets/right-arrow.png';
 import leftArrow from '../../../assets/left-arrow.png';
 
-const ComparisonCard = ({ firstDistrict, firstAvg, secondDistrict, secondAvg, comparedAvg }) => {
+const ComparisonCard = ({ firstDistrict,
+                          firstAvg,
+                          secondDistrict,
+                          secondAvg,
+                          comparedAvg }) => {
   return (
     <div className='comparison-card'>
       <h3 className='first-district'>
