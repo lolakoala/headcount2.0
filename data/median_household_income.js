@@ -1,5 +1,5 @@
-module.exports = {
-  [
+module.exports =
+[
   {
     "Location": "Colorado",
     "TimeFrame": 2007,
@@ -11946,5 +11946,4 @@ module.exports = {
     "DataFormat": "Percent",
     "Data": 1
   }
-]
-}
+];

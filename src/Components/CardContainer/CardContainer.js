@@ -59,7 +59,12 @@ class CardContainer extends React.Component {
                 select={() => this.selectToCompare(secondToCompare.location)}/>
          </div>
       <button className="clear-button"
-              onClick={() => this.clearComparisons()}>
+              onClick={() => this.clearComparisons()}
+              onKeyUp={(event) => {
+                if (event.which === 13) {
+                  this.clearComparisons();
+                }
+              }}>
               Clear Comparisons
       </button>
     </div>
@@ -77,7 +82,8 @@ class CardContainer extends React.Component {
                 'selected' : dataObj.class
                 }
               key={Math.random()}
-              select={() => this.selectToCompare(dataObj.location)}/>
+              select={() => this.selectToCompare(dataObj.location)}
+              tabIndex={0}/>
       )
     );
   }

@@ -1,5 +1,5 @@
-module.exports = {
-  [
+module.exports =
+[
   {
     "Location": "Colorado",
     "Race Ethnicity": "All Students",
@@ -40544,5 +40544,4 @@ module.exports = {
     "DataFormat": "Percent",
     "Data": 0.6091
   }
-]
-}
+];

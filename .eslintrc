@@ -17,7 +17,7 @@
   // Having a problem with one of these rules? Learn more about it here: https://eslint.org/docs/rules/
   "rules": {
     "eqeqeq": ["error", "always"],
-    "getter-return": ["error", { "allowImplicit": true }],
+    # "getter-return": ["error", { "allowImplicit": true }],
     "indent": ["warn", 2],
     "no-template-curly-in-string": "error",
     "semi": ["error", "always"],
