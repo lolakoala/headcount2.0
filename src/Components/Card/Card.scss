@@ -18,7 +18,7 @@ ul {
   background-color: #ACD0DD;
 }
 
-.card:hover{
+.selected, .card:hover{
   cursor: pointer;
   border: 5px solid white;
 }

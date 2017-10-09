@@ -14,7 +14,7 @@ ul {
   margin: 20px 20px 20px 20px;
   background-color: #ACD0DD; }
 
-.card:hover {
+.selected, .card:hover {
   cursor: pointer;
   border: 5px solid white; }
 
