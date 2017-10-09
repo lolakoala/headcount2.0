@@ -13,6 +13,10 @@ class CardContainer extends React.Component {
   }
 
   selectToCompare = (string) => {
+    //returns out if the thing selected is in the array.
+    //it puts it in the front of the array.
+    //pops off the last item if the array is bigger than two.
+    //if the array has two, then it sets the comparison object. 
     if (this.state.comparing.includes(string)) {
       return;
     }
